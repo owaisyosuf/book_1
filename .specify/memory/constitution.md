@@ -1,55 +1,85 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: [CONSTITUTION_VERSION] -> 1.0.0
+- List of modified principles (old title -> new title if renamed):
+  - [PRINCIPLE_1_NAME] -> I. Specification-First
+  - [PRINCIPLE_2_NAME] -> II. Educational Clarity
+  - [PRINCIPLE_3_NAME] -> III. Accuracy & Verifiability
+  - [PRINCIPLE_4_NAME] -> IV. Style Consistency
+  - [PRINCIPLE_5_NAME] -> V. Docusaurus Compatibility
+- Added sections:
+  - Book Structure & Outline
+  - Writing & Formatting Rules
+- Removed sections: None
+- Templates requiring updates (✅ updated / ⚠ pending):
+  - .specify/templates/plan-template.md (✅ updated)
+  - .specify/templates/spec-template.md (✅ updated)
+  - .specify/templates/tasks-template.md (✅ updated)
+- Follow-up TODOs: Ensure Docusaurus is initialized in the repository.
+-->
+
+# AI/Spec-Driven Book Creation Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Specification-First
+All chapters and major content sections MUST be defined in a formal specification BEFORE any content is written. Changes to the book structure require an update to the specification first.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Educational Clarity
+Content MUST be written for beginners and students. Simple explanations, analogies, and step-by-step guides are preferred over dense technical jargon. Non-negotiable: All technical terms must be introduced before use.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Accuracy & Verifiability
+No false or unverifiable claims. AI-generated technical content MUST be verified against official documentation or tested in a live environment. If a claim cannot be verified, it must be omitted or framed as an observation.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Style Consistency
+The book MUST maintain a consistent voice and tone across all 10 chapters. Each chapter must follow the mandated structure: Clear title, Short introduction, Main concepts in sections, Simple examples, and a Summary.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Docusaurus Compatibility
+All output MUST be valid Markdown compatible with Docusaurus. Files MUST be placed in the `/docs` directory and adhere to Docusaurus sidebar configurations.
 
-### [PRINCIPLE_6_NAME]
+## Book Structure & Outline
 
+### Chapter Mandate
+Each of the 10 chapters MUST include:
+- **Title**: Clear and descriptive
+- **Introduction**: 1-2 paragraphs setting the context
+- **Main Concepts**: Organized into logical sections with subheadings
+- **Examples**: Simple, runnable, or illustrative examples
+- **Summary**: Recaps key takeaways at the end
 
-[PRINCIPLE__DESCRIPTION]
+### Chapter Outline
+1. Introduction to AI-Native Development
+2. What is Spec-Driven Development?
+3. Understanding Specifications
+4. AI Tools in Software Development
+5. Using Claude for Writing Code & Docs
+6. Introduction to Docusaurus
+7. Building a Book with Docusaurus
+8. Integrating AI Content into Docusaurus
+9. Version Control with GitHub
+10. Deploying to GitHub Pages
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Writing & Formatting Rules
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Markdown & Docusaurus
+- Use Docusaurus-standard Markdown (MDX support where needed).
+- Headings MUST follow hierarchical structure (H1 for title, H2 for sections, H3 for sub-sections).
+- Code blocks MUST specify the language (e.g., ```javascript) and use proper indentation.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Content Constraints
+- Keep language simple and educational.
+- Avoid advanced research papers or academic style.
+- Do not introduce dependencies on paid tools unless explicitly specified in the feature plan.
+- Eliminate unnecessary complexity in both explanations and examples.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+### Amendment Procedure
+This constitution is the authoritative source for the book's development. Amendments require a version bump and a Sync Impact Report. Changes to core principles require a MAJOR version bump.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+### Versioning Policy
+- **MAJOR**: Fundamental change to book purpose or core writing principles.
+- **MINOR**: New chapters, significant structural changes, or new mandatory sections.
+- **PATCH**: Wording clarifications, typo fixes, or minor formatting updates.
+
+**Version**: 1.0.0 | **Ratified**: 2026-01-01 | **Last Amended**: 2026-01-01

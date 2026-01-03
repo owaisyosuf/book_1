@@ -20,10 +20,9 @@ description: "Task list template for feature implementation"
 
 ## Path Conventions
 
-- **Single project**: `src/`, `tests/` at repository root
-- **Web app**: `backend/src/`, `frontend/src/`
-- **Mobile**: `api/src/`, `ios/src/` or `android/src/`
-- Paths shown below assume single project - adjust based on plan.md structure
+- **Docusaurus Book**: `docs/` at repository root
+- **Configuration**: `docusaurus.config.js`, `sidebars.js`
+- Paths shown below assume standard `docs/` structure
 
 <!-- 
   ============================================================================

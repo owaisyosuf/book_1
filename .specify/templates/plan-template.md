@@ -31,7 +31,11 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **I. Specification-First**: Is this feature/chapter defined in a spec?
+- [ ] **II. Educational Clarity**: Is the plan focused on simple explanations?
+- [ ] **III. Accuracy & Verifiability**: How will technical claims be verified?
+- [ ] **IV. Style Consistency**: Does the structure match the 5-part chapter mandate?
+- [ ] **V. Docusaurus Compatibility**: Will output be located in `/docs`?
 
 ## Project Structure
 

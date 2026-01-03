@@ -102,14 +102,7 @@
 
 ## Success Criteria *(mandatory)*
 
-<!--
-  ACTION REQUIRED: Define measurable success criteria.
-  These must be technology-agnostic and measurable.
--->
-
-### Measurable Outcomes
-
-- **SC-001**: [Measurable metric, e.g., "Users can complete account creation in under 2 minutes"]
-- **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
-- **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
-- **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+- **SC-001**: Chapter follows the 5-part mandate (Title, Intro, Concepts, Examples, Summary).
+- **SC-002**: All technical claims verified against official docs/tests.
+- **SC-003**: Markdown is fully compatible with Docusaurus (tested via local build).
+- **SC-004**: Language is accessible to a high-school level reader.
