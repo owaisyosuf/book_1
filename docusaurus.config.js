@@ -9,16 +9,16 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 const config = {
   title: 'AI/Spec-Driven Book Creation',
   tagline: 'A technical book on AI-assisted, specification-driven development',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // Set the production url of your site here
-  url: 'https://your-book-name.github.io',
+  url: 'https://owaisyousuf.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
+  organizationName: 'owaisyousuf', // Usually your GitHub org/user name.
   projectName: 'ai-book-creation', // Usually your repo name.
   deploymentBranch: 'gh-pages', // Branch for deployment
 
@@ -43,7 +43,8 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/owaisyousuf/ai-book-creation/edit/master/docs/',
+          routeBasePath: '/', // Serve docs at the root route
         },
         blog: false, // Disable blog functionality
         theme: {
@@ -72,7 +73,7 @@ const config = {
             label: 'Book',
           },
           {
-            href: 'https://github.com/your-username/ai-book-creation',
+            href: 'https://github.com/owaisyousuf/ai-book-creation',
             label: 'GitHub',
             position: 'right',
           },
@@ -86,7 +87,7 @@ const config = {
             items: [
               {
                 label: 'Introduction',
-                to: '/intro',
+                to: '/',
               },
             ],
           },
@@ -112,7 +113,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/owaisyousuf/ai-book-creation',
               },
             ],
           },
